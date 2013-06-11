@@ -17,9 +17,9 @@
             </div>
             <div class="entry">
                 <p>
-                    {{ post.body|safe|slice:"20" }}
+                    {{ post.body|safe|truncatewords_html:20 }}
                 </p>
-                <p class="fullTextLink"><a href="articles/{{ post.id }}" class="more">&laquo;&laquo;&nbsp;&nbsp;阅读全文&nbsp;&nbsp;&raquo;&raquo;</a></p>
+                <p class="fullTextLink"><a href="/articles/{{ post.id }}" class="more">&laquo;&laquo;&nbsp;&nbsp;阅读全文&nbsp;&nbsp;&raquo;&raquo;</a></p>
             </div>
         </div>
     {% endfor %}
