@@ -1,0 +1,63 @@
+{% extends "mainPage.html" %}
+
+{% block content_main %}
+    <!-- 显示当前位置 -->
+    <div class="current_pos">
+        <p>
+            &gt;&nbsp;&nbsp;<a href="/">首页</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;
+            <a href="/category/{{ post.category.id }}">{{ post.category.title }}</a>
+            &nbsp;&nbsp;&gt;&nbsp;&nbsp;
+            {{ post.title }}
+        </p>
+    </div>
+    <div class="article">
+    {% load markup %}
+        <h2 class="title"><a href="articles/{{ post.id }}">{{ post.title }}</a></h2>
+        <div class="article_info">
+            <span class="byline"> {{ post.timestamp|date:"Y年n月j日" }}</span>
+            <span class="comments"><a href="#comment_div">发表评论</a></span>
+            <span class="readCnt">{{ post.readTimes }}人阅读过</span>
+        </div>
+        <div class="entry">
+
+                {{ post.body|safe }}
+
+        </div>
+        <div class="article_info_bottom">
+            <span class="archives"><a href="/category/{{ post.category_id }}">{{ post.category }}</a></span>
+            <span class="tags">
+                {% for tag in post.tags.all %}
+                    <a href="/tags/{{ tag.id }}">{{ tag }}&nbsp;&nbsp;</a>
+                {% endfor %}
+            </span>
+        </div>
+    </div>
+
+{#    社会化分享链接#}
+    <div>
+              <!-- JiaThis Button BEGIN -->
+        <div class="jiathis_style_24x24">
+            <a class="jiathis_button_qzone"></a>
+            <a class="jiathis_button_tsina"></a>
+            <a class="jiathis_button_tqq"></a>
+            <a class="jiathis_button_weixin"></a>
+            <a class="jiathis_button_renren"></a>
+            <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+            <a class="jiathis_counter_style"></a>
+        </div>
+        <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1366336830209188" charset="utf-8"></script>
+        <!-- JiaThis Button END -->
+    </div>
+
+    <br>
+    <br>
+    <!--  -->
+    <!-- UY BEGIN -->
+    <a name="comment_div"></a>
+    <!-- UY BEGIN -->
+    <div id="uyan_frame"></div>
+    <script type="text/javascript" id="UYScript" src="http://v1.uyan.cc/js/iframe.js?UYUserId=0" async=""></script>
+    <!-- UY END -->
+
+
+{% endblock %}

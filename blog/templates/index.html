@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>tortoiseqin</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+     {% load staticfiles %}
+<link href="{% static "blog/style.css" %}" rel="stylesheet" type="text/css" />
+<link href="{% static "syntaxhighlighter/styles/shCore.css" %}" type="text/css" rel="stylesheet"/>
+<link href="{% static "syntaxhighlighter/styles/shThemeDefault.css" %}" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+
+
+
+<div class="main">
+  <div class="header">
+    <div class="header_resize">
+      <div class="logo">
+        <h1><a href="index.html">tortoise qin </a><small>life is short,cherish it !</small></h1>
+      </div>
+      <div class="menu_nav">
+      <ul>
+          <li><a href="/"><span>首页</span></a></li>
+          <li><a href="/"><span>博客</span></a></li>
+          <li><a href="/aboutme"><span>关于我</span></a></li>
+          <!--<li><a href="blog.html"><span>Blog</span></a></li>
+          <li><a href="contact.html"><span>Contact Us</span></a></li>-->
+      </ul>
+      </div>
+      <div class="clr"></div>
+
+      <div class="clr"></div>
+      <div class="header_img"></div>
+
+
+    </div>
+  </div>
+  <div class="clr"></div>
+  <div class="content">
+    <div class="content_resize">
+	<!-- main bar -->
+	<div class="mainbar">
+        {% block content_main %}
+		{% endblock %}
+	</div>
+	<div class="sidebar">
+		<div class="gadget">
+           <div class="search">
+				<form id="form" name="form" method="get" action="/searchResult/">
+				  <span>
+				  <input name="s" type="text" class="keywords" id="textfield" maxlength="50"/>
+				  <input name="b" type="image" src="{% static "blog/images/search.gif" %}" class="button" />
+				  </span>
+				</form>
+			</div>
+			<!--/search -->
+		</div>
+		<div class="clr"></div>
+        <div class="gadget">
+          <h2>最新文章</h2>
+
+			{% block new_posts %}
+			{% endblock %}
+        </div>
+        <div class="gadget">
+          <h2><span>文章分类</span></h2>
+          <div class="clr"></div>
+			{% block blog_category %}
+			{% endblock %}
+        </div>
+		<div class="gadget">
+          <h2>标签</h2>
+          <div class="clr"></div>
+			{% block tagsblock %}
+			{% endblock %}
+        </div>
+		<div class="gadget">
+          <h2>归档</h2>
+          <div class="clr"></div>
+			{% block archive %}
+			{% endblock %}
+        </div>
+		<div class="gadget">
+          <h2>友情链接</h2>
+          <div class="clr"></div>
+			<ul>
+				<li><a href="http://coolshell.cn">酷壳</a></li>
+				<li><a href="http://blog.csdn.net/v_JULY_v">结构之法，算法之道</a></li>
+				<li><a href="http://hi.baidu.com/windey1988">文哥的Hi空间</a></li>
+			</ul>
+        </div>
+		<div class="gadget">
+          <h2>关注我</h2>
+          <div class="clr"></div>
+			<iframe width="100%" height="550" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=550&fansRow=2&ptype=1&speed=0&skin=9&isTitle=1&noborder=1&isWeibo=1&isFans=1&uid=3271913297&verifier=4703954c&dpc=1"></iframe>
+        </div>
+	</div>
+      <div class="clr"></div>
+    </div>
+  </div>
+
+	<div class="fbg">
+	 <div class="fbg_resize">
+		<div class="copyright">
+			<p class="lr">© Copyright <a href="#"> tortoise qin </a>.</p>
+		</div>
+		<div class="poweredBy">
+			<p>Powered By:&nbsp;&nbsp;
+			<a href="http://www.python.org/"><img src="{% static "blog/images/python-logo.jpg" %}"></a>&nbsp;&nbsp;
+			<a href="https://www.djangoproject.com/"><img src="{% static "blog/images/django-logo.gif" %}"></a>&nbsp;&nbsp;
+            <a href="https://www.heroku.com/"><img src="{% static "blog/images/heroku-logo_2.jpg" %}"></a>
+			</p>
+		</div>
+	 </div>
+	</div>
+</div>
+<!--??- 必须添加项-->
+<script type="text/javascript" src="{% static "syntaxhighlighter/scripts/shCore.js" %}"></script>
+<!--??- 根据需要选择添加-->
+<script type = "text/javascript"  src = "{% static "syntaxhighlighter/scripts/shBrushJava.js" %}"></script>
+<script type = "text/javascript"  src = "{% static "syntaxhighlighter/scripts/shBrushCss.js" %}"></script>
+<script type = "text/javascript"  src =  "{% static "syntaxhighlighter/scripts/shBrushJScript.js" %}" ></script>
+<script type = "text/javascript"  src =  "{% static "syntaxhighlighter/scripts/shBrushPhp.js" %}" ></script>
+<script type = "text/javascript"  src =  "{% static "syntaxhighlighter/scripts/shBrushSql.js" %}" ></script>
+<script type = "text/javascript"  src =  "{% static "syntaxhighlighter/scripts/shBrushVb.js" %}" ></script>
+<script type = "text/javascript"  src =  "{% static "syntaxhighlighter/scripts/shBrushPython.js" %}" ></script>
+<script type = "text/javascript"  src =  "{% static "syntaxhighlighter/scripts/shBrushCpp.js" %}" ></script>
+<script type="text/javascript"    src =  "{% static "syntaxhighlighter/scripts/shBrushXml.js" %}" ></script>
+<script  type = "text/javascript">
+SyntaxHighlighter.config.bloggerMode = true;
+SyntaxHighlighter.defaults['gutter']=true;
+SyntaxHighlighter.defaults['Smart-tabs']=true;
+SyntaxHighlighter.all();
+</script>
+</body>
+</html>

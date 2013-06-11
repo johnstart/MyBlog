@@ -1,0 +1,28 @@
+{% extends "mainPage.html" %}
+
+{% block content_main %}
+    <!-- 显示当前位置 -->
+    <div class="current_pos">
+        {% if query %}
+            <p>
+            &nbsp;&nbsp;{{ query }}:&nbsp;&nbsp;的搜索结果：
+            </p>
+        {% else %}
+            <p style="color:red">
+            &nbsp;&nbsp;查询为空:&nbsp;&nbsp;
+            </p>
+        {% endif %}
+    </div>
+    {% for post in results %}
+        <div class="article">
+            <h2 class="title"><a href="/articles/{{ post.id }}">{{ post.title }}</a></h2>
+            <p class="byline">作者：覃俊力   发表于：{{ post.timestamp }}</p>
+            <div class="entry">
+                <p>
+                    {{ post.body|safe|truncatewords_html:20 }}
+                </p>
+                <p class="links"><a href="/articles/{{ post.id }}" class="more">&laquo;&laquo;&nbsp;&nbsp;阅读全文&nbsp;&nbsp;&raquo;&raquo;</a></p>
+            </div>
+        </div>
+    {% endfor %}
+{% endblock %}

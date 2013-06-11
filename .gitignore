@@ -1,0 +1,4 @@
+venv
+MyBlogVenv
+*.pyc
+MyBlog/local_settings.py
