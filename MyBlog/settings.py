@@ -64,7 +64,7 @@ MEDIA_URL = '/media/'
 # Don't put anything in this directory yourself; store your static files
 # in apps' "static/" subdirectories and in STATICFILES_DIRS.
 # Example: "/var/www/example.com/static/"
-STATIC_ROOT ='static/'
+STATIC_ROOT ='E:/MyBlog_Heroku/MyBlog/staticfiles/'
 
 # URL prefix for static files.
 # Example: "http://example.com/static/", "http://static.example.com/"
@@ -74,7 +74,7 @@ STATIC_URL = '/static/'
 #---------------for tinymce config in development -------------------
 TINYMCE_JS_URL='/static/tiny_mce/tiny_mce_src.js'
 TINYMCE_JS_ROOT='/static/tiny_mce/'
-
+# TINYMCE_FILEBROWSER = True  for use django-filebrowser instead of mce-filebrowser
 
 TINYMCE_DEFAULT_CONFIG = {
     'file_browser_callback': 'mce_filebrowser',
@@ -157,6 +157,8 @@ INSTALLED_APPS = (
     'mce_filebrowser',
     'easy_thumbnails',
     # 'captcha', #used for comment validation human and machine
+    # 'grappelli',  #for django-filebrowser
+    # 'filebrowser',  # for django-filebrowser
 )
 
 # A sample logging configuration. The only tangible logging
@@ -188,17 +190,30 @@ LOGGING = {
     }
 }
 
+#-----file browser settings------
+# Filebrowser
+# FILEBROWSER_MEDIA_ROOT = MEDIA_ROOT
+# FILEBROWSER_MEDIA_URL = MEDIA_URL
+# FILEBROWSER_STATIC_ROOT = STATIC_ROOT
+# FILEBROWSER_STATIC_URL = STATIC_URL
+# FILEBROWSER_DIRECTORY=""
+# URL_FILEBROWSER_MEDIA = STATIC_URL + 'filebrowser/'
+# PATH_FILEBROWSER_MEDIA = STATIC_ROOT + 'filebrowser/'
+# URL_TINYMCE =  'tiny_mce/'
+# PATH_TINYMCE = STATIC_ROOT + 'tiny_mce/'
+#----end file browser settings---
+
 
 #----------add qjl 2013 6-2  for deploying on heroku
 # see https://devcenter.heroku.com/articles/django
 # Parse database configuration from $DATABASE_URL
 import dj_database_url
-DATABASES = {'default': dj_database_url.config(default=os.environ["DATABASE_URL"])}
-# DATABASES['default'] =dj_database_url.config(default=u'sqlite://db/postgres.db')
-
-
-# Honor the 'X-Forwarded-Proto' header for request.is_secure()
-SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+# DATABASES = {'default': dj_database_url.config(default=os.environ["DATABASE_URL"])}
+# # DATABASES['default'] =dj_database_url.config(default=u'sqlite://db/postgres.db')
+#
+#
+# # Honor the 'X-Forwarded-Proto' header for request.is_secure()
+# SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 # int the production environment MEDIA_ROOT  STATIC_ROOT are no longer needed
 from urlparse import urljoin

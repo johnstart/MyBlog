@@ -35,11 +35,12 @@ urlpatterns = patterns('',
 urlpatterns += patterns('',
     url(r'^captcha/', include('captcha.urls')),
 )
-
-from filebrowser.sites import site
-urlpatterns+=patterns('',
-    url(r'^admin/filebrowser/',include(site.urls)),
-)
+# for django-filebrowser  installation
+# from filebrowser.sites import site
+# urlpatterns+=patterns('',
+#     url(r'^admin/filebrowser/',include(site.urls)),
+#     url(r'grappelli/',include('grappelli.urls'))
+# )
 
 from django.conf import settings
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
