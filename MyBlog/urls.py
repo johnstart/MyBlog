@@ -32,9 +32,10 @@ urlpatterns = patterns('',
 
     url(r'^latest/feeds/$',LatestEntriesFeed()),
 )
-urlpatterns += patterns('',
-    url(r'^captcha/', include('captcha.urls')),
-)
+# for captcha  human validation 
+# urlpatterns += patterns('',
+#     url(r'^captcha/', include('captcha.urls')),
+# )
 # for django-filebrowser  installation
 # from filebrowser.sites import site
 # urlpatterns+=patterns('',
