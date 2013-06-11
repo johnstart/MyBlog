@@ -32,7 +32,7 @@ urlpatterns = patterns('',
 
     url(r'^latest/feeds/$',LatestEntriesFeed()),
 )
-# for captcha  human validation 
+# for captcha  human validation
 # urlpatterns += patterns('',
 #     url(r'^captcha/', include('captcha.urls')),
 # )
