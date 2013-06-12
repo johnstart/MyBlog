@@ -64,7 +64,9 @@ MEDIA_URL = '/media/'
 # Don't put anything in this directory yourself; store your static files
 # in apps' "static/" subdirectories and in STATICFILES_DIRS.
 # Example: "/var/www/example.com/static/"
-STATIC_ROOT ='E:/MyBlog_Heroku/MyBlog/staticfiles/'
+import os.path
+PROJECT_ROOT=os.path.join(MyBlogPath,'../')
+STATIC_ROOT =os.path.join(PROJECT_ROOT,'static/')
 
 # URL prefix for static files.
 # Example: "http://example.com/static/", "http://static.example.com/"
@@ -89,14 +91,13 @@ TINYMCE_DEFAULT_CONFIG = {
     'height': 800,
     }
 #----------------------------------
-import os.path
-PROJECT_ROOT=os.path.join(MyBlogPath,'../')
+
 # Additional locations of static files
 STATICFILES_DIRS = (
     # Put strings here, like "/home/html/static" or "C:/www/django/static".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
-    os.path.join(PROJECT_ROOT,'static/'),
+    #os.path.join(PROJECT_ROOT,'static/'),
 )
 
 # List of finder classes that know how to find static files in
@@ -227,5 +228,5 @@ if not DEBUG:
     S3_URL='http://static.tortoiseqin.com/'
     STATIC_URL =urljoin(S3_URL,'/static/')
     MEDIA_URL = urljoin(S3_URL,'/media/')
-    TINYMCE_JS_URL = S3_URL+'static/tiny_mce/tiny_mce_src.js'
-    TINYMCE_JS_ROOT = S3_URL+'static/tiny_mce/'
+    TINYMCE_JS_URL = '/static/tiny_mce/tiny_mce_src.js'
+    TINYMCE_JS_ROOT ='/static/tiny_mce/'

@@ -46,10 +46,10 @@ urlpatterns = patterns('',
 from django.conf import settings
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
-if settings.DEBUG:
-    urlpatterns += patterns('', url(r'^static/(?P<path> .*)$', 'django.views.static.serve',
-                                   { 'document_root': settings.STATIC_ROOT, }), )
-    urlpatterns+=staticfiles_urlpatterns()
+# if settings.DEBUG:
+urlpatterns += patterns('', url(r'^static/(?P<path> .*)$', 'django.views.static.serve',
+                               { 'document_root': settings.STATIC_ROOT, }), )
+urlpatterns+=staticfiles_urlpatterns()
 
 if settings.DEBUG:
     # static files (images, css, javascript, etc.)

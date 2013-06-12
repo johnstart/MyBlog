@@ -4,10 +4,10 @@
     <list default="true" id="35ae8db0-c339-4304-b36b-1683e63bd0e1" name="Default" comment="" />
     <ignored path="MyBlog.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/settings.py" changelist="35ae8db0-c339-4304-b36b-1683e63bd0e1" time="1371020380562" ignored="false" />
+    <file path="/settings.py" changelist="35ae8db0-c339-4304-b36b-1683e63bd0e1" time="1371026380601" ignored="false" />
     <file path="/base2.html" changelist="35ae8db0-c339-4304-b36b-1683e63bd0e1" time="1370681612488" ignored="false" />
     <file path="/a.dummy" changelist="35ae8db0-c339-4304-b36b-1683e63bd0e1" time="1370333380682" ignored="false" />
-    <file path="/models.py" changelist="35ae8db0-c339-4304-b36b-1683e63bd0e1" time="1370705176409" ignored="false" />
+    <file path="/models.py" changelist="35ae8db0-c339-4304-b36b-1683e63bd0e1" time="1371026217255" ignored="false" />
     <file path="/mainPage.html" changelist="35ae8db0-c339-4304-b36b-1683e63bd0e1" time="1370925490476" ignored="false" />
     <file path="/pageView.html" changelist="35ae8db0-c339-4304-b36b-1683e63bd0e1" time="1370871026178" ignored="false" />
     <file path="/urls.py" changelist="35ae8db0-c339-4304-b36b-1683e63bd0e1" time="1370947041131" ignored="false" />
@@ -62,8 +62,46 @@
       <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MyBlog/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="20" selection-start="1067" selection-end="1067" vertical-scroll-proportion="0.0">
+            <state line="55" column="27" selection-start="2048" selection-end="2048" vertical-scroll-proportion="0.0">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ar.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/tiny_mce/langs/ar.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="12" selection-start="12" selection-end="12" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tiny_mce_popup.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/tiny_mce/tiny_mce_popup.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="3" selection-start="102" selection-end="102" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tiny_mce.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/tiny_mce/tiny_mce.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="2" selection-start="2" selection-end="2" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/blog/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="31" column="0" selection-start="846" selection-end="846" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -71,16 +109,7 @@
       <file leaf-file-name="settings.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/MyBlog/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="226" column="43" selection-start="8463" selection-end="8463" vertical-scroll-proportion="0.4164306">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tiny_mce_popup.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://C:/Python27/Lib/site-packages/django_tinymce-1.5.1-py2.7.egg/tinymce/static/tiny_mce/tiny_mce_popup.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="41" selection-start="179" selection-end="179" vertical-scroll-proportion="0.0">
+            <state line="68" column="49" selection-start="2537" selection-end="2537" vertical-scroll-proportion="0.43909347">
               <folding />
             </state>
           </provider>
@@ -90,35 +119,6 @@
         <entry file="file://$PROJECT_DIR$/blog/templates/tagView.html">
           <provider selected="true" editor-type-id="text-editor">
             <state line="18" column="19" selection-start="618" selection-end="618" vertical-scroll-proportion="-5.419355">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="manage.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/manage.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="39" selection-start="248" selection-end="248" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#22#31#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".gitignore" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="5" selection-start="21" selection-end="21" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="wsgi.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MyBlog/wsgi.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="66" selection-start="1116" selection-end="1116" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -152,11 +152,8 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/blog/templatetags/Gravatar.py" />
-        <option value="$PROJECT_DIR$/blog/templatetags/gravatar.py" />
         <option value="$PROJECT_DIR$/blog/static/blog/style.css" />
         <option value="$PROJECT_DIR$/blog/forms.py" />
-        <option value="$PROJECT_DIR$/blog/models.py" />
         <option value="$PROJECT_DIR$/blog/templates/pageView.html" />
         <option value="$PROJECT_DIR$/blog/templates/index.html" />
         <option value="$PROJECT_DIR$/templates/404.html" />
@@ -164,9 +161,12 @@
         <option value="$PROJECT_DIR$/templates/404_test.html" />
         <option value="$PROJECT_DIR$/blog/views.py" />
         <option value="$PROJECT_DIR$/requirements.txt" />
-        <option value="$PROJECT_DIR$/MyBlog/urls.py" />
         <option value="$PROJECT_DIR$/blog/templates/tagView.html" />
         <option value="C:/Python27/Lib/site-packages/django_tinymce-1.5.1-py2.7.egg/tinymce/static/tiny_mce/tiny_mce_popup.js" />
+        <option value="$PROJECT_DIR$/MyBlog/urls.py" />
+        <option value="$PROJECT_DIR$/static/tiny_mce/tiny_mce_popup.js" />
+        <option value="$PROJECT_DIR$/static/tiny_mce/tiny_mce.js" />
+        <option value="$PROJECT_DIR$/blog/models.py" />
         <option value="$PROJECT_DIR$/MyBlog/settings.py" />
       </list>
     </option>
@@ -257,59 +257,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="django_tinymce-1.5.1-py2.7.egg" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tinymce" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MyBlog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="&lt; Python 2.7.4 (C:/Python27/python.exe) &gt;" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="django_tinymce-1.5.1-py2.7.egg" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tinymce" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tiny_mce" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MyBlog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="&lt; Python 2.7.4 (C:/Python27/python.exe) &gt;" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="django_tinymce-1.5.1-py2.7.egg" />
+              <option name="myItemId" value="site-packages" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -344,42 +292,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="MyBlog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MyBlog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MyBlog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MyBlog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MyBlog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blog" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -444,13 +356,14 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\MyBlog_Heroku\MyBlog\MyBlog\templates" />
       <recent name="E:\MyBlog_Heroku\MyBlog\MyBlog\static" />
+      <recent name="E:\MyBlog_Heroku\MyBlog\MyBlog\templates" />
       <recent name="E:\MyBlog_Heroku\MyBlog\MyBlog\static\images" />
       <recent name="E:\MyBlog_Heroku\MyBlog\MyBlog\blog\static\blog\images" />
       <recent name="E:\MyBlog_Heroku\MyBlog\MyBlog\blog\static\blog" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\MyBlog_Heroku\MyBlog\MyBlog\static" />
       <recent name="E:\MyBlog_Heroku\MyBlog\MyBlog\blog\static" />
     </key>
   </component>
@@ -611,7 +524,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1296" height="786" extended-state="7" />
+    <frame x="-8" y="-8" width="1296" height="786" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -697,34 +610,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/blog/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="10" selection-start="1477" selection-end="1477" vertical-scroll-proportion="-31.935484">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/404.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="36" selection-start="63" selection-end="63" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/404_test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="79" column="58" selection-start="2317" selection-end="2317" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Procfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="5" selection-start="21" selection-end="21" vertical-scroll-proportion="0.0">
@@ -790,23 +675,53 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MyBlog/urls.py">
+    <entry file="file://C:/Python27/Lib/site-packages/django_tinymce-1.5.1-py2.7.egg/tinymce/static/tiny_mce/tiny_mce_popup.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="20" selection-start="1067" selection-end="1067" vertical-scroll-proportion="0.0">
+        <state line="4" column="41" selection-start="179" selection-end="179" vertical-scroll-proportion="0.24929178">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Python27/Lib/site-packages/django_tinymce-1.5.1-py2.7.egg/tinymce/static/tiny_mce/tiny_mce_popup.js">
+    <entry file="file://$PROJECT_DIR$/static/tiny_mce/langs/ar.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="41" selection-start="179" selection-end="179" vertical-scroll-proportion="0.0">
+        <state line="0" column="12" selection-start="12" selection-end="12" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/tiny_mce/tiny_mce.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="2" selection-start="2" selection-end="2" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/tiny_mce/tiny_mce_popup.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="3" selection-start="102" selection-end="102" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="0" selection-start="846" selection-end="846" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MyBlog/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="55" column="27" selection-start="2048" selection-end="2048" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MyBlog/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="226" column="43" selection-start="8463" selection-end="8463" vertical-scroll-proportion="0.4164306">
+        <state line="68" column="49" selection-start="2537" selection-end="2537" vertical-scroll-proportion="0.43909347">
           <folding />
         </state>
       </provider>
