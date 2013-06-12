@@ -4,7 +4,7 @@
     <list default="true" id="35ae8db0-c339-4304-b36b-1683e63bd0e1" name="Default" comment="" />
     <ignored path="MyBlog.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/settings.py" changelist="35ae8db0-c339-4304-b36b-1683e63bd0e1" time="1370952565632" ignored="false" />
+    <file path="/settings.py" changelist="35ae8db0-c339-4304-b36b-1683e63bd0e1" time="1371013698690" ignored="false" />
     <file path="/base2.html" changelist="35ae8db0-c339-4304-b36b-1683e63bd0e1" time="1370681612488" ignored="false" />
     <file path="/a.dummy" changelist="35ae8db0-c339-4304-b36b-1683e63bd0e1" time="1370333380682" ignored="false" />
     <file path="/models.py" changelist="35ae8db0-c339-4304-b36b-1683e63bd0e1" time="1370705176409" ignored="false" />
@@ -62,25 +62,25 @@
       <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MyBlog/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="31" selection-start="1323" selection-end="1323" vertical-scroll-proportion="0.0">
+            <state line="26" column="20" selection-start="1067" selection-end="1067" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="settings.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="settings.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/MyBlog/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="23" selection-start="571" selection-end="571" vertical-scroll-proportion="0.0">
+            <state line="28" column="35" selection-start="970" selection-end="970" vertical-scroll-proportion="0.24929178">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tiny_mce_popup.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="tiny_mce_popup.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://C:/Python27/Lib/site-packages/django_tinymce-1.5.1-py2.7.egg/tinymce/static/tiny_mce/tiny_mce_popup.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="4" column="56" selection-start="196" selection-end="196" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -152,7 +152,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/blog/templatetags/__init__.py" />
         <option value="$PROJECT_DIR$/blog/templatetags/Gravatar.py" />
         <option value="$PROJECT_DIR$/blog/templatetags/gravatar.py" />
         <option value="$PROJECT_DIR$/blog/static/blog/style.css" />
@@ -167,6 +166,7 @@
         <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/MyBlog/urls.py" />
         <option value="$PROJECT_DIR$/blog/templates/tagView.html" />
+        <option value="C:/Python27/Lib/site-packages/django_tinymce-1.5.1-py2.7.egg/tinymce/static/tiny_mce/tiny_mce_popup.js" />
         <option value="$PROJECT_DIR$/MyBlog/settings.py" />
       </list>
     </option>
@@ -770,13 +770,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MyBlog/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="31" selection-start="1323" selection-end="1323" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/blog/templates/mainPage.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="34" column="59" selection-start="997" selection-end="1018" vertical-scroll-proportion="-4.967742">
@@ -791,16 +784,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MyBlog/settings.py">
+    <entry file="file://C:/Python27/Lib/site-packages/django_tinymce-1.5.1-py2.7.egg/tinymce/static/tiny_mce/tiny_mce_popup.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="23" selection-start="571" selection-end="571" vertical-scroll-proportion="0.0">
+        <state line="4" column="56" selection-start="196" selection-end="196" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Python27/Lib/site-packages/django_tinymce-1.5.1-py2.7.egg/tinymce/static/tiny_mce/tiny_mce_popup.js">
+    <entry file="file://$PROJECT_DIR$/MyBlog/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="26" column="20" selection-start="1067" selection-end="1067" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MyBlog/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="35" selection-start="970" selection-end="970" vertical-scroll-proportion="0.24929178">
           <folding />
         </state>
       </provider>
