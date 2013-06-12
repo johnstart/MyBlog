@@ -220,10 +220,11 @@ from urlparse import urljoin
 if not DEBUG:
     AWS_ACCESS_KEY_ID= "AKIAJE6BFPD3ELDFDE4Q"
     AWS_SECRET_ACCESS_KEY="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"
-    AWS_STORAGE_BUCKET_NAME = 'bucket_tortoiseqin'
+    AWS_STORAGE_BUCKET_NAME = 'static.tortoiseqin.com'
     DEFAULT_FILE_STORAGE = 'MyBlog.s3_utils.MediaS3BotoStorage'  #used for media file storage define where you place user_upload files
     STATICFILES_STORAGE = 'MyBlog.s3_utils.StaticS3BotoStorage'  #used for static files storage  where are your static files
-    S3_URL = 'http://%s.s3.amazonaws.com/' % AWS_STORAGE_BUCKET_NAME
+    #S3_URL = 'http://%s.s3.amazonaws.com/' % AWS_STORAGE_BUCKET_NAME
+    S3_URL='http://static.tortoiseqin.com'
     STATIC_URL =urljoin(S3_URL,'/static/')
     MEDIA_URL = urljoin(S3_URL,'/media/')
     TINYMCE_JS_URL = S3_URL+'static/tiny_mce/tiny_mce_src.js'
