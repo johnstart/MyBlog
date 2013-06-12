@@ -68,19 +68,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="settings.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="settings.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/MyBlog/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="230" column="47" selection-start="8657" selection-end="8657" vertical-scroll-proportion="0.0">
+            <state line="226" column="42" selection-start="8462" selection-end="8462" vertical-scroll-proportion="0.62606233">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tiny_mce_popup.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="tiny_mce_popup.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://C:/Python27/Lib/site-packages/django_tinymce-1.5.1-py2.7.egg/tinymce/static/tiny_mce/tiny_mce_popup.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="41" selection-start="179" selection-end="179" vertical-scroll-proportion="0.24929178">
+            <state line="4" column="41" selection-start="179" selection-end="179" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -166,8 +166,8 @@
         <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/MyBlog/urls.py" />
         <option value="$PROJECT_DIR$/blog/templates/tagView.html" />
-        <option value="$PROJECT_DIR$/MyBlog/settings.py" />
         <option value="C:/Python27/Lib/site-packages/django_tinymce-1.5.1-py2.7.egg/tinymce/static/tiny_mce/tiny_mce_popup.js" />
+        <option value="$PROJECT_DIR$/MyBlog/settings.py" />
       </list>
     </option>
   </component>
@@ -791,16 +791,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MyBlog/settings.py">
+    <entry file="file://C:/Python27/Lib/site-packages/django_tinymce-1.5.1-py2.7.egg/tinymce/static/tiny_mce/tiny_mce_popup.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="230" column="47" selection-start="8657" selection-end="8657" vertical-scroll-proportion="0.0">
+        <state line="4" column="41" selection-start="179" selection-end="179" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Python27/Lib/site-packages/django_tinymce-1.5.1-py2.7.egg/tinymce/static/tiny_mce/tiny_mce_popup.js">
+    <entry file="file://$PROJECT_DIR$/MyBlog/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="41" selection-start="179" selection-end="179" vertical-scroll-proportion="0.24929178">
+        <state line="226" column="42" selection-start="8462" selection-end="8462" vertical-scroll-proportion="0.62606233">
           <folding />
         </state>
       </provider>

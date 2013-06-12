@@ -224,7 +224,7 @@ if not DEBUG:
     DEFAULT_FILE_STORAGE = 'MyBlog.s3_utils.MediaS3BotoStorage'  #used for media file storage define where you place user_upload files
     STATICFILES_STORAGE = 'MyBlog.s3_utils.StaticS3BotoStorage'  #used for static files storage  where are your static files
     #S3_URL = 'http://%s.s3.amazonaws.com/' % AWS_STORAGE_BUCKET_NAME
-    S3_URL='http://static.tortoiseqin.com'
+    S3_URL='http://static.tortoiseqin.com/'
     STATIC_URL =urljoin(S3_URL,'/static/')
     MEDIA_URL = urljoin(S3_URL,'/media/')
     TINYMCE_JS_URL = S3_URL+'static/tiny_mce/tiny_mce_src.js'
