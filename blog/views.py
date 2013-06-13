@@ -59,7 +59,7 @@ def tagcloud(threshold=0,maxsize=10,minsize=1):
     constant = log(maxcount - (mincount - 1))/(maxsize - minsize or 1)
     tagcount = zip(taglist, counts)
     for tag, count in tagcount:
-        size = log(count - (mincount - 1))/constant + minsize
+        size = log(count - (mincount - 1))/(constant or 1) + minsize
         size=int(size)
         tagcloud.append({'tag': tag, 'count': count, 'size': size})
     return tagcloud

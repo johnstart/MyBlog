@@ -36,7 +36,7 @@ TIME_ZONE = 'Asia/Chongqing'
 
 # Language code for this installation. All choices can be found here:
 # http://www.i18nguy.com/unicode/language-identifiers.html
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'zh-cn'
 
 SITE_ID = 1
 
@@ -66,38 +66,62 @@ MEDIA_URL = '/media/'
 # Example: "/var/www/example.com/static/"
 import os.path
 PROJECT_ROOT=os.path.join(MyBlogPath,'../')
-STATIC_ROOT =os.path.join(PROJECT_ROOT,'static/')
+STATIC_ROOT ='E:/MyBlog_Heroku/MyBlog/staticfiles'
 
 # URL prefix for static files.
 # Example: "http://example.com/static/", "http://static.example.com/"
 STATIC_URL = '/static/'
 
 
-#---------------for tinymce config in development -------------------
-TINYMCE_JS_URL='/static/tiny_mce/tiny_mce_src.js'
-TINYMCE_JS_ROOT='/static/tiny_mce/'
-# TINYMCE_FILEBROWSER = True  for use django-filebrowser instead of mce-filebrowser
-
-TINYMCE_DEFAULT_CONFIG = {
-    'file_browser_callback': 'mce_filebrowser',
-    'plugins': "syntaxhl",
-     'theme_advanced_buttons2_add': "|,syntaxhl",
-    'theme': "advanced",
-    'toolbar': "undo redo | styleselect | bold italic | link image ",
-    'theme_advanced_toolbar_location' : "top",
-    'theme_advanced_toolbar_align' : "left",
-    'theme_advanced_buttons1_add' : "fontselect,fontsizeselect,forecolor,backcolor",
-    'width': 1000,
-    'height': 800,
-    }
-#----------------------------------
+# #---------------for tinymce config in development -------------------
+# TINYMCE_JS_URL='/static/tiny_mce/tiny_mce_src.js'
+# TINYMCE_JS_ROOT='/static/tiny_mce/'
+# # TINYMCE_FILEBROWSER = True  for use django-filebrowser instead of mce-filebrowser
+#
+# TINYMCE_DEFAULT_CONFIG = {
+#     'file_browser_callback': 'mce_filebrowser',
+#     'plugins': "syntaxhl",
+#      'theme_advanced_buttons2_add': "|,syntaxhl",
+#     'theme': "advanced",
+#     'toolbar': "undo redo | styleselect | bold italic | link image ",
+#     'theme_advanced_toolbar_location' : "top",
+#     'theme_advanced_toolbar_align' : "left",
+#     'theme_advanced_buttons1_add' : "fontselect,fontsizeselect,forecolor,backcolor",
+#     'width': 1000,
+#     'height': 800,
+#     }
+#-----------for ckeditor config------------------
+CKEDITOR_MEDIA_PREFIX = "/static/ckeditor/"
+CKEDITOR_UPLOAD_PATH =MEDIA_ROOT+ "/uploads"
+CKEDITOR_CONFIGS = {
+     'default': {
+        'toolbar':[
+            ['Source','-','Save','NewPage','Preview','-','Templates'],
+            ['Cut','Copy','Paste','PasteText','PasteFromWord','-','Print','SpellChecker','Scayt'],
+            ['Undo','Redo','-','Find','Replace','-','SelectAll','RemoveFormat'],
+            ['Form','Checkbox','Radio','TextField','Textarea','Select','Button', 'ImageButton','HiddenField'],
+            ['Bold','Italic','Underline','Strike','-','Subscript','Superscript'],
+            ['NumberedList','BulletedList','-','Outdent','Indent','Blockquote'],
+            ['JustifyLeft','JustifyCenter','JustifyRight','JustifyBlock'],
+            ['Link','Unlink','Anchor'],
+            ['Image','Flash','Table','HorizontalRule','Smiley','SpecialChar','PageBreak'],
+            ['Styles','Format','Font','FontSize'],
+            ['TextColor','BGColor','syntaxhighlight'],
+            ['Maximize','ShowBlocks','-','About'],
+        ],
+        'width': 1100,
+        'height': 400,
+        'toolbarCanCollapse': False,
+    },
+}
+#------------------------------------
 
 # Additional locations of static files
 STATICFILES_DIRS = (
     # Put strings here, like "/home/html/static" or "C:/www/django/static".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
-    #os.path.join(PROJECT_ROOT,'static/'),
+    os.path.join(PROJECT_ROOT,'static/'),
 )
 
 # List of finder classes that know how to find static files in
@@ -153,13 +177,14 @@ INSTALLED_APPS = (
 
     # using markdown and pygments for blog text editing and code syntax highliting ---added qjl
     'django.contrib.markup',
-    'tinymce',
+   # 'tinymce',
     'storages',  # used for static file and  media files upload to AWS S3
-    'mce_filebrowser',
+   # 'mce_filebrowser',
     'easy_thumbnails',
     # 'captcha', #used for comment validation human and machine
     # 'grappelli',  #for django-filebrowser
     # 'filebrowser',  # for django-filebrowser
+    'ckeditor',
 )
 
 # A sample logging configuration. The only tangible logging
@@ -224,9 +249,11 @@ if not DEBUG:
     AWS_STORAGE_BUCKET_NAME = 'static.tortoiseqin.com'
     DEFAULT_FILE_STORAGE = 'MyBlog.s3_utils.MediaS3BotoStorage'  #used for media file storage define where you place user_upload files
     STATICFILES_STORAGE = 'MyBlog.s3_utils.StaticS3BotoStorage'  #used for static files storage  where are your static files
-    #S3_URL = 'http://%s.s3.amazonaws.com/' % AWS_STORAGE_BUCKET_NAME
-    S3_URL='http://static.tortoiseqin.com/'
+    S3_URL = 'http://%s.s3.amazonaws.com/' % AWS_STORAGE_BUCKET_NAME
+    #S3_URL='http://static.tortoiseqin.com/'
     STATIC_URL =urljoin(S3_URL,'/static/')
     MEDIA_URL = urljoin(S3_URL,'/media/')
-    TINYMCE_JS_URL = '/static/tiny_mce/tiny_mce_src.js'
-    TINYMCE_JS_ROOT ='/static/tiny_mce/'
+    CKEDITOR_MEDIA_PREFIX = urljoin(S3_URL,"/static/ckeditor/")
+    CKEDITOR_UPLOAD_PATH =MEDIA_ROOT+ "/uploads"
+    # TINYMCE_JS_URL = '/static/tiny_mce/tiny_mce_src.js'
+    # TINYMCE_JS_ROOT ='/static/tiny_mce/'

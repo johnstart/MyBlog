@@ -32,6 +32,10 @@ urlpatterns = patterns('',
 
     url(r'^latest/feeds/$',LatestEntriesFeed()),
 )
+
+urlpatterns +=patterns('',
+    url(r'^ckeditor/',include('ckeditor.urls')),
+)
 # for captcha  human validation
 # urlpatterns += patterns('',
 #     url(r'^captcha/', include('captcha.urls')),

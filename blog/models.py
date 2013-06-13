@@ -18,10 +18,10 @@ class Tag(models.Model):
         return u'%s'%self.title
 
 #--blog -------
-from tinymce.models import HTMLField
+from ckeditor.fields import RichTextField
 class Post(models.Model):
     title=models.CharField(max_length=150)
-    body=HTMLField()
+    body=RichTextField()
     timestamp=models.DateTimeField()
     readTimes=models.PositiveIntegerField(editable=False,default=0)
     category=models.ForeignKey(BlogCategory)
@@ -62,3 +62,13 @@ admin.site.register(Post,PostAdmin)
 # admin.site.register(Comment,CommentAdmin)
 admin.site.register(BlogCategory,BlogCategoryAdmin)
 admin.site.register(Tag,TagAdmin)
+
+#---test models for ckeditor
+
+class News(models.Model):
+    content=RichTextField()
+
+class NewsAdmin(admin.ModelAdmin):
+    display_fields=["content",]
+
+admin.site.register(News,NewsAdmin)

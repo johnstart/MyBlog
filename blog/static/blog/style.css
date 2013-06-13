@@ -118,6 +118,7 @@ ol li .send { margin:16px 0 0 0;}
 /*icon for blogs*/
 .article_info, .article_info_bottom
 {
+    clear:both;
     height:40px;
     font-size:16px;
     font-family: "微软雅黑",sans-serif;
