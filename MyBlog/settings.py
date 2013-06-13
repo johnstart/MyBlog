@@ -91,7 +91,7 @@ STATIC_URL = '/static/'
 #     }
 #-----------for ckeditor config------------------
 CKEDITOR_MEDIA_PREFIX = "/static/ckeditor/"
-CKEDITOR_UPLOAD_PATH =MEDIA_ROOT+ "/uploads"
+CKEDITOR_UPLOAD_PATH =MEDIA_ROOT+ "uploads"
 CKEDITOR_CONFIGS = {
      'default': {
         'toolbar':[
