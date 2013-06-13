@@ -1,4 +1,5 @@
 venv
 MyBlogVenv
 *.pyc
+requriements2.txt
 MyBlog/local_settings.py
