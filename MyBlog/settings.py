@@ -2,7 +2,7 @@
 import os
 MyBlogPath=os.path.abspath(os.path.dirname(__file__))
 
-DEBUG = False
+DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
 
@@ -242,15 +242,15 @@ DATABASES = {'default': dj_database_url.config(default=os.environ["DATABASE_URL"
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 # int the production environment MEDIA_ROOT  STATIC_ROOT are no longer needed
-from urlparse import urljoin
-if not DEBUG:
-    AWS_ACCESS_KEY_ID= "AKIAJE6BFPD3ELDFDE4Q"
-    AWS_SECRET_ACCESS_KEY="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"
-    AWS_STORAGE_BUCKET_NAME = 'static.tortoiseqin.com'
-    DEFAULT_FILE_STORAGE = 'MyBlog.s3_utils.MediaS3BotoStorage'  #used for media file storage define where you place user_upload files
-    STATICFILES_STORAGE = 'MyBlog.s3_utils.StaticS3BotoStorage'  #used for static files storage  where are your static files
-    S3_URL = 'http://%s.s3.amazonaws.com/' % AWS_STORAGE_BUCKET_NAME
-    #S3_URL='http://static.tortoiseqin.com/'
-    STATIC_URL =urljoin(S3_URL,'/static/')
-    MEDIA_URL = urljoin(S3_URL,'/media/')
-    CKEDITOR_MEDIA_PREFIX = urljoin(S3_URL,"/static/ckeditor/")
+# from urlparse import urljoin
+# if not DEBUG:
+#     AWS_ACCESS_KEY_ID= "AKIAJE6BFPD3ELDFDE4Q"
+#     AWS_SECRET_ACCESS_KEY="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"
+#     AWS_STORAGE_BUCKET_NAME = 'static.tortoiseqin.com'
+#     DEFAULT_FILE_STORAGE = 'MyBlog.s3_utils.MediaS3BotoStorage'  #used for media file storage define where you place user_upload files
+#     STATICFILES_STORAGE = 'MyBlog.s3_utils.StaticS3BotoStorage'  #used for static files storage  where are your static files
+#     S3_URL = 'http://%s.s3.amazonaws.com/' % AWS_STORAGE_BUCKET_NAME
+#     #S3_URL='http://static.tortoiseqin.com/'
+#     STATIC_URL =urljoin(S3_URL,'/static/')
+#     MEDIA_URL = urljoin(S3_URL,'/media/')
+#     CKEDITOR_MEDIA_PREFIX = urljoin(S3_URL,"/static/ckeditor/")
