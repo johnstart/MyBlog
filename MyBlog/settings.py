@@ -178,7 +178,7 @@ INSTALLED_APPS = (
     # using markdown and pygments for blog text editing and code syntax highliting ---added qjl
     # 'django.contrib.markup',
    # 'tinymce',
-   #  'storages',  # used for static file and  media files upload to AWS S3
+     'storages',  # used for static file and  media files upload to AWS S3
    # 'mce_filebrowser',
    #  'easy_thumbnails',
     # 'captcha', #used for comment validation human and machine
