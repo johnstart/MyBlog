@@ -2,7 +2,7 @@
 import os
 MyBlogPath=os.path.abspath(os.path.dirname(__file__))
 
-DEBUG = False
+DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
 
@@ -64,9 +64,8 @@ MEDIA_URL = '/media/'
 # Don't put anything in this directory yourself; store your static files
 # in apps' "static/" subdirectories and in STATICFILES_DIRS.
 # Example: "/var/www/example.com/static/"
-import os.path
-PROJECT_ROOT=os.path.join(MyBlogPath,'../')
-STATIC_ROOT ='E:/MyBlog_Heroku/MyBlog/staticfiles'
+
+STATIC_ROOT ='staticfiles/'
 
 # URL prefix for static files.
 # Example: "http://example.com/static/", "http://static.example.com/"
@@ -115,13 +114,14 @@ CKEDITOR_CONFIGS = {
     },
 }
 #------------------------------------
-
+import os.path
+PROJECT_ROOT=os.path.join(MyBlogPath,'../')
 # Additional locations of static files
 STATICFILES_DIRS = (
     # Put strings here, like "/home/html/static" or "C:/www/django/static".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
-    os.path.join(PROJECT_ROOT,'static/'),
+    os.path.join(PROJECT_ROOT,'static'),
 )
 
 # List of finder classes that know how to find static files in
@@ -176,11 +176,11 @@ INSTALLED_APPS = (
     #tag app used for add tags for blogs see docs: http://pythonhosted.org/django-taggit/getting_started.html
 
     # using markdown and pygments for blog text editing and code syntax highliting ---added qjl
-    'django.contrib.markup',
+    # 'django.contrib.markup',
    # 'tinymce',
-    'storages',  # used for static file and  media files upload to AWS S3
+   #  'storages',  # used for static file and  media files upload to AWS S3
    # 'mce_filebrowser',
-    'easy_thumbnails',
+   #  'easy_thumbnails',
     # 'captcha', #used for comment validation human and machine
     # 'grappelli',  #for django-filebrowser
     # 'filebrowser',  # for django-filebrowser
@@ -242,18 +242,18 @@ DATABASES = {'default': dj_database_url.config(default=os.environ["DATABASE_URL"
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 # int the production environment MEDIA_ROOT  STATIC_ROOT are no longer needed
-from urlparse import urljoin
-if not DEBUG:
-    AWS_ACCESS_KEY_ID= "AKIAJE6BFPD3ELDFDE4Q"
-    AWS_SECRET_ACCESS_KEY="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"
-    AWS_STORAGE_BUCKET_NAME = 'static.tortoiseqin.com'
-    DEFAULT_FILE_STORAGE = 'MyBlog.s3_utils.MediaS3BotoStorage'  #used for media file storage define where you place user_upload files
-    STATICFILES_STORAGE = 'MyBlog.s3_utils.StaticS3BotoStorage'  #used for static files storage  where are your static files
-    S3_URL = 'http://%s.s3.amazonaws.com/' % AWS_STORAGE_BUCKET_NAME
-    #S3_URL='http://static.tortoiseqin.com/'
-    STATIC_URL =urljoin(S3_URL,'/static/')
-    MEDIA_URL = urljoin(S3_URL,'/media/')
-    CKEDITOR_MEDIA_PREFIX = urljoin(S3_URL,"/static/ckeditor/")
-    CKEDITOR_UPLOAD_PATH =MEDIA_ROOT+ "/uploads"
-    # TINYMCE_JS_URL = '/static/tiny_mce/tiny_mce_src.js'
-    # TINYMCE_JS_ROOT ='/static/tiny_mce/'
+# from urlparse import urljoin
+# if not DEBUG:
+#     AWS_ACCESS_KEY_ID= "AKIAJE6BFPD3ELDFDE4Q"
+#     AWS_SECRET_ACCESS_KEY="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"
+#     AWS_STORAGE_BUCKET_NAME = 'static.tortoiseqin.com'
+#     DEFAULT_FILE_STORAGE = 'MyBlog.s3_utils.MediaS3BotoStorage'  #used for media file storage define where you place user_upload files
+#     STATICFILES_STORAGE = 'MyBlog.s3_utils.StaticS3BotoStorage'  #used for static files storage  where are your static files
+#     S3_URL = 'http://%s.s3.amazonaws.com/' % AWS_STORAGE_BUCKET_NAME
+#     #S3_URL='http://static.tortoiseqin.com/'
+#     STATIC_URL =urljoin(S3_URL,'/static/')
+#     MEDIA_URL = urljoin(S3_URL,'/media/')
+#     CKEDITOR_MEDIA_PREFIX = urljoin(S3_URL,"/static/ckeditor/")
+#     CKEDITOR_UPLOAD_PATH =MEDIA_ROOT+ "/uploads"
+#     # TINYMCE_JS_URL = '/static/tiny_mce/tiny_mce_src.js'
+#     # TINYMCE_JS_ROOT ='/static/tiny_mce/'

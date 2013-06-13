@@ -54,6 +54,7 @@ a.rm, a.com { margin-left:8px; padding:9px 12px; text-decoration:none; color:#ff
 .gadget a{font-size: 15px;font-family: "微软雅黑",sans-serif;}
 .article .fullTextLink
 {
+    clear:both;
     float:right;
     margin-right:20px;
 }
