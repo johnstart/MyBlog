@@ -234,12 +234,12 @@ LOGGING = {
 # see https://devcenter.heroku.com/articles/django
 # Parse database configuration from $DATABASE_URL
 import dj_database_url
-# DATABASES = {'default': dj_database_url.config(default=os.environ["DATABASE_URL"])}
+DATABASES = {'default': dj_database_url.config(default=os.environ["DATABASE_URL"])}
 # # DATABASES['default'] =dj_database_url.config(default=u'sqlite://db/postgres.db')
 #
 #
 # # Honor the 'X-Forwarded-Proto' header for request.is_secure()
-# SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 # int the production environment MEDIA_ROOT  STATIC_ROOT are no longer needed
 from urlparse import urljoin
